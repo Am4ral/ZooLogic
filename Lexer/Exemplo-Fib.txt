@@ -1,0 +1,45 @@
+arvore fibonacci(indio n) {
+    cobra (n == 0 || n == 1) {
+        desmatamento n;
+    } 
+    cauda{
+        desmatamento fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+arvore somaFibonacci(indio n) {
+  indio soma = 0;
+  formiga (indio i = 0; i < n; i++) {
+    soma += fibonacci(i);
+  }
+  desmatamento soma;
+}
+
+selva() {
+indio n;
+
+lhama << "Digite um número: ";
+porco >> n;
+
+lhama << "O " << n << "º número da sequência de Fibonacci é " << fibonacci(n) << endl;
+
+desmatamento 0;
+}
+
+
+
+
+selva = main() --> Pq ela é onde tudo acontece
+arvore = funcao --> Pq ela é um pedaço da selva
+lhama = cout --> A lhama cospe igual o cout cospe na tela, sla fez sentido pra mim
+desmatamento = return --> pq ele acaba com a selva
+porco = cin --> Pq ele come tudo igual o cin pega tudo do terminal
+cobra = if --> pq em portugues o "if" é "se" e a cobra faz "sssssss"
+cauda = else --> cauda da cobra que é o if
+boi = bool --> pq o boi faz booooooooooooooooooooooooooool
+pato = float --> pq o pato flutua
+doisPato = double --> precisa nem explicar
+indio = int
+formiga = for
+
+
