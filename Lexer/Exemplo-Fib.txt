@@ -1,3 +1,5 @@
+
+
 arvore fibonacci(indio n) {
     cobra (n == 0 || n == 1) {
         desmatamento n;
@@ -39,6 +41,8 @@ cauda = else --> cauda da cobra que é o if
 boi = bool --> pq o boi faz booooooooooooooooooooooooooool
 pato = float --> pq o pato flutua
 doisPato = double --> precisa nem explicar
+pe = char --> Calma que lá vem
+centopeia = string -> conjunbto de pés (char)
 indio = int
 formiga = for
 
