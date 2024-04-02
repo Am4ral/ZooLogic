@@ -10,6 +10,8 @@ FOR: 'formiga';
 TIPO: 'indio' | 'pato' | 'doisPato' | 'boi' | 'pe' | 'centopeia';
 AP: '(';
 FP: ')';
+AC: '{';
+FC: '}';
 ESC: 'lhama';
 LER: 'porco';
 VAR: LETRA(DIGITO|LETRA)*;
