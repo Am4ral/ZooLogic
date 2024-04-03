@@ -17,6 +17,5 @@ LER: 'porco';
 VAR: LETRA(DIGITO|LETRA)*;
 NUM: DIGITO+('.'DIGITO+)?;
 OP_ARIT: '+'|'-'|'*'|'/';
-fragment LETRA: [a-zA-Z];
 fragment DIGITO: [0-9];
 OP_REL: |<| |<=| |>=| |>=| |<>|;
