@@ -1,4 +1,4 @@
-arvore somaFibonacci(indio n) {
+arvore indio somaFibonacci(indio n) {
     indio soma = 0;
 
     formiga (indio i = 0; i < n; i++) {
@@ -9,7 +9,7 @@ arvore somaFibonacci(indio n) {
 }
 
 
-arvore fibonacci(indio n) {
+arvore indio fibonacci(indio n) {
     cobra (n == 0 || n == 1) {
         desmatamento n;
     } 
