@@ -19,3 +19,4 @@ NUM: DIGITO+('.'DIGITO+)?;
 OP_ARIT: '+'|'-'|'*'|'/';
 fragment DIGITO: [0-9];
 OP_REL: |<| |<=| |>=| |>=| |<>|;
+PV: ';'
