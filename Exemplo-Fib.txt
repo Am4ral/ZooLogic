@@ -1,0 +1,29 @@
+arvore fibonacci(indio n) {
+    cobra (n == 0 || n == 1) {
+        desmatamento n;
+    } 
+    cauda{
+        desmatamento fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+arvore somaFibonacci(indio n) {
+  indio soma = 0;
+  formiga (indio i = 0; i < n; i++) {
+    soma += fibonacci(i);
+  }
+  desmatamento soma;
+}
+
+selva() {
+indio n;
+
+lhama << "Digite um numero ";
+porco >> n;
+
+lhama << "O " << n << "numero da sequencia de Fibonacci eh " << fibonacci(n) << endl;
+
+desmatamento 0;
+}
+
+
