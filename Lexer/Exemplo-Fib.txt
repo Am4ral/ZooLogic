@@ -27,23 +27,3 @@ lhama << "O " << n << "º número da sequência de Fibonacci é " << fibonacci(n
 
 desmatamento 0;
 }
-
-
-
-
-selva = main() --> Pq ela é onde tudo acontece
-arvore = funcao --> Pq ela é um pedaço da selva
-lhama = cout --> A lhama cospe igual o cout cospe na tela, sla fez sentido pra mim
-desmatamento = return --> pq ele acaba com a selva
-porco = cin --> Pq ele come tudo igual o cin pega tudo do terminal
-cobra = if --> pq em portugues o "if" é "se" e a cobra faz "sssssss"
-cauda = else --> cauda da cobra que é o if
-boi = bool --> pq o boi faz booooooooooooooooooooooooooool
-pato = float --> pq o pato flutua
-doisPato = double --> precisa nem explicar
-pe = char --> Calma que lá vem
-centopeia = string -> conjunbto de pés (char)
-indio = int
-formiga = for
-
-
