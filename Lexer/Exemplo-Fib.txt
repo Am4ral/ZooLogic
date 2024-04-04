@@ -1,5 +1,5 @@
 
-
+ 
 arvore fibonacci(indio n) {
     cobra (n == 0 || n == 1) {
         desmatamento n;
