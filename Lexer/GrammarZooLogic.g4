@@ -7,16 +7,22 @@ ELSE: 'cauda';
 ELIF: 'caudaCobra';
 RET: 'desmatamento';
 FOR: 'formiga';
-TIPO: 'indio' | 'pato' | 'doisPato' | 'boi' | 'pe' | 'centopeia';
+WHILE: 'baleia';
+TIPO: 'indio' | 'pato' | 'boi' | 'pe' | 'centopeia';
 AP: '(';
 FP: ')';
 AC: '{';
 FC: '}';
+PV: ';'
+COMEN: '//';
 ESC: 'lhama';
 LER: 'porco';
 VAR: LETRA(DIGITO|LETRA)*;
 NUM: DIGITO+('.'DIGITO+)?;
-OP_ARIT: '+'|'-'|'*'|'/';
 fragment DIGITO: [0-9];
-OP_REL: |<| |<=| |>=| |>=| |<>|;
-PV: ';'
+fragment LETRA: [a-zA-Z];
+OP_ARIT: '+'|'-'|'*'|'/'|'%';
+OP_REL: |<| |<=| |>=| |>=| |<>| |==|;
+OP_COND: '&&' | '||';
+OP_ATR: '==';
+
