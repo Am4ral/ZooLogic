@@ -1,5 +1,5 @@
 <h1 align="center">ZooLogic</h1>
-<p>ZooLogic é uma linguagem de programação desenvolvida como projeto autoral pelos estudantes de Ciência da Computação da UFLA: <bold>Danilo Chagas Clemente</bold>, <bold>Lucas Alvarenga Lopes</bold>, <bold>Lara Ramos Linhares</bold> e <bold>Marco Túlio Amaral</bold>. Este projeto foi realizado como parte da disciplina de Compiladores.</p>
+<p>ZooLogic é uma linguagem de programação desenvolvida como projeto autoral pelos estudantes de Ciência da Computação da UFLA: <strong>Danilo Chagas Clemente</strong>, <strong>Lucas Alvarenga Lopes</strong>, <strong>Lara Ramos Linhares</strong> e <strong>Marco Túlio Amaral</strong>. Este projeto foi realizado como parte da disciplina de Compiladores.</p>
 
 ## Sobre a Linguagem
 <p>A linguagem ZooLogic adota características inspiradas na linguagem C/C++ em seus quesitos sintáticos e semânticos. Já sobre sua composição lexical, é utilizado termos relacionados ao mundo animal, incluindo habitat, nome de animais e outras características que compõem a fauna e o ambiente. </p>
