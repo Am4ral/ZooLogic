@@ -18,6 +18,7 @@ PV: ';';
 COMEN: '//';
 ESC: 'lhama';
 LER: 'porco';
+CENTOPEIA: ASP (~["\r\n] | '\\' .)* ASP;
 VAR: LETRA(DIGITO|LETRA)*;
 NUM: DIGITO+('.'DIGITO+)?;
 fragment DIGITO: [0-9];

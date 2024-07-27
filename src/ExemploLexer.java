@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ExemploLexer {
 
     public static void  main (String[] args){
-        String filename = "F:\\Faculdade\\5 periodo\\Compiladores\\ZooLogic\\exemplos\\Exemplo-Fat";
+        String filename = "F:\\Faculdade\\Matérias\\5 periodo\\Compiladores\\ZooLogic\\exemplos\\Exemplo-Fat";
         try{
             CharStream input = CharStreams.fromFileName(filename);
             GrammarZooLogicLexer lexer = new GrammarZooLogicLexer(input);
