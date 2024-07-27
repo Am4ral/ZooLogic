@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 1" />
+    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 1">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogic.interp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExemploLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompiladorZooloGic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +53,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CompiladorZooloGic.executor": "Run",
     "Application.ExemploLexer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Faculdade/Matérias/5 periodo/Compiladores/ZooLogic/src",
@@ -57,13 +77,14 @@
       <recent name="F:\Faculdade\Matérias\5 periodo\Compiladores\ZooLogic\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Faculdade\Matérias\5 periodo\Compiladores\ZooLogic\src" />
       <recent name="F:\Faculdade\5 periodo\Compiladores\ZooLogic\exemplos" />
       <recent name="F:\Faculdade\5 periodo\Compiladores\Zoologic\src" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ExemploLexer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExemploLexer" />
+    <configuration name="CompiladorZooloGic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompiladorZooloGic" />
       <module name="Zoologic" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,7 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExemploLexer" />
+        <item itemvalue="Application.CompiladorZooloGic" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +118,7 @@
       <workItem from="1712270288103" duration="3000" />
       <workItem from="1712350297342" duration="968000" />
       <workItem from="1722081584923" duration="2664000" />
+      <workItem from="1722084322184" duration="4960000" />
     </task>
     <task id="LOCAL-00001" summary="upando a etapa 1">
       <option name="closed" value="true" />
@@ -122,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722084103346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="att etapa 1">
+      <option name="closed" value="true" />
+      <created>1722084544364</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722084544364</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

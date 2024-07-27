@@ -1,19 +1,19 @@
-indio selva() {
-  indio n
+selva() {
+  indio n;
 
   indio fatorial;
 
-  lhama << "Digite um numero (0 <= n <= 12) " << endl;
-  porco << n << endl;
+  lhama("Digite um numero (0 <= n <= 12) ");
+  porco(n);
 
   fatorial = 1;
-  formiga (indio i = 1; i <= n; i++) {
-    fatorial *= i;
+  formiga (indio i = 1; i <= n; i+1) {
+    fatorial = fatorial * i;
   }
 
-    vai dar erro aqui ::::
+  cout << "O fatorial eh: " << fatorial << endl;
 
-  cout << n << "!=" << fatoral << endl;
+  lhama("O fatorial eh: " ++ fatorial);
 
   desmatamento 0;
 }
