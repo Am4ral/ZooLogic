@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 2" />
+    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +102,7 @@
       <workItem from="1712270288103" duration="3000" />
       <workItem from="1712350297342" duration="968000" />
       <workItem from="1722081584923" duration="2664000" />
-      <workItem from="1722084322184" duration="5612000" />
+      <workItem from="1722084322184" duration="8783000" />
     </task>
     <task id="LOCAL-00001" summary="upando a etapa 1">
       <option name="closed" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722090390213</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="att etapa 2">
+      <option name="closed" value="true" />
+      <created>1722090564653</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722090564653</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
