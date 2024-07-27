@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogic.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GrammarZooLogicVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarZooLogicLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExemploLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompiladorZooloGic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" afterDir="false" />
-    </list>
+    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att etapa 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +100,7 @@
       <workItem from="1712270288103" duration="3000" />
       <workItem from="1712350297342" duration="968000" />
       <workItem from="1722081584923" duration="2664000" />
-      <workItem from="1722084322184" duration="4960000" />
+      <workItem from="1722084322184" duration="5612000" />
     </task>
     <task id="LOCAL-00001" summary="upando a etapa 1">
       <option name="closed" value="true" />
@@ -152,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722084544364</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="att etapa 2">
+      <option name="closed" value="true" />
+      <created>1722090390213</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722090390213</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upando a etapa 1" />
     <MESSAGE value="att etapa 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="att etapa 1" />
+    <MESSAGE value="att etapa 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="att etapa 2" />
   </component>
 </project>
