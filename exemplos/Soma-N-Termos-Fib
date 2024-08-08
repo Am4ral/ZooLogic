@@ -1,8 +1,8 @@
 arvore indio somaFibonacci(indio n) {
     indio soma = 0;
 
-    formiga (indio i = 0; i < n; i++) {
-        soma += fibonacci(i);
+    formiga (indio i = 0; i < n; i = i + 1) {
+        soma = soma + fibonacci(i);
     }
 
     desmatamento soma;
@@ -23,10 +23,10 @@ arvore indio fibonacci(indio n) {
 selva() {
     indio n;
 
-    lhama << "Digite um numero ";
-    porco >> n;
+    lhama("Digite um numero ");
+    porco(n);
 
-    lhama << "A soma dos " << n << " primeiros termos da sequencia de Fibonacci eh " << somaFibonacci(n) << endl;
+    lhama("A soma dos " ++ n ++ " primeiros termos da sequencia de Fibonacci eh " ++ somaFibonacci(n));
 
     desmatamento 0;
 }

@@ -11,7 +11,7 @@ selva() {
     fatorial = fatorial * i;
   }
 
-  cout << "O fatorial eh: " << fatorial << endl;
+
 
   lhama("O fatorial eh: " ++ fatorial);
 

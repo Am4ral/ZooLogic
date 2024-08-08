@@ -1,6 +1,6 @@
 grammar GrammarZooLogic;
 
-prog:   (stmt)* EOF;
+prog:   (stmt)*;
 
 stmt:   mainStmt
     |   funcDef
@@ -9,19 +9,32 @@ stmt:   mainStmt
     |   whileStmt
     |   retStmt
     |   varDecl
+    |   inputOutput
     |   varAssign
     ;
 
-mainStmt:   'main' '{' stmt* '}' ;
-funcDef:    'func' VAR '(' paramList? ')' '{' stmt* '}' ;
-ifStmt:     'if' '(' expr ')' '{' stmt* '}' (elifStmt)* (elseStmt)? ;
-elifStmt:   'elif' '(' expr ')' '{' stmt* '}' ;
-elseStmt:   'else' '{' stmt* '}' ;
-forStmt:    'for' '(' varDecl expr ';' expr ')' '{' stmt* '}' ;
-whileStmt:  'while' '(' expr ')' '{' stmt* '}' ;
-retStmt:    'return' expr ';' ;
+mainStmt:   'selva''()' '{' stmt* '}' ;
+funcDef:    'arvore' TIPO VAR'(' paramList? ')' '{' stmt* '}' ;
+ifStmt:     'cobra' '(' expr ')' '{' stmt* '}' (elifStmt)* (elseStmt)? ;
+elifStmt:   'caudaCobra' '(' expr ')' '{' stmt* '}' ;
+elseStmt:   'cauda' '{' stmt* '}' ;
+forStmt:    'formiga' '(' varDecl expr ';' expr')' '{' stmt* '}' ;
+whileStmt:  'baleia' '(' expr ')' '{' stmt* '}' ;
+retStmt:    'desmatamento' expr ';' ;
 varDecl:    TIPO VAR ('=' expr)? ';' ;
 varAssign:  VAR '=' expr ';' ;
+
+inputOutput: 'lhama' '(' (stringExpr | VAR | NUM) ')' ';'
+           | 'porco' '(' VAR ')' ';'
+           ;
+
+stringExpr:  STRING
+           | STRING OP_CONCAT stringExpr
+           | VAR OP_CONCAT stringExpr
+           | NUM OP_CONCAT stringExpr
+           | '(' expr ')' OP_CONCAT stringExpr
+           ;
+
 
 paramList:  param (',' param)* ;
 param:      TIPO VAR ;
@@ -29,14 +42,15 @@ param:      TIPO VAR ;
 expr:       expr OP_ARIT expr
     |       expr OP_REL expr
     |       expr OP_COND expr
+    |       expr OP_ATR expr
     |       '(' expr ')'
     |       NUM
     |       STRING
     |       VAR
-    |       'esc' expr
-    |       'ler' expr
+    |       VAR '(' (expr (',' expr)*)? ')'
+    |       'lhama' '(' expr ')'
+    |       'porco' '(' expr ')'
     ;
-
 
 MAIN: 'selva';
 FUNC: 'arvore';
@@ -57,7 +71,7 @@ COMEN: '//';
 ESC: 'lhama';
 LER: 'porco';
 STRING: ASP (~["\r\n] | '\\' .)* ASP;
-VAR: LETRA(DIGITO|LETRA)*;
+VAR: LETRA (DIGITO|LETRA)*;
 NUM: DIGITO+('.'DIGITO+)?;
 fragment DIGITO: [0-9];
 fragment LETRA: [a-zA-Z];
@@ -65,6 +79,6 @@ OP_ARIT: '+'|'-'|'*'|'/'|'%';
 OP_REL: '<'| '>'| '>='| '<='| '==' | '!=';
 OP_COND: '&&' | '||';
 OP_ATR: '=';
-WS: [ \r\t\n]+ ->skip;
+OP_CONCAT: '++';
+WS: [ \r\t\n]+ -> skip;
 ErrorChar: . ;
-

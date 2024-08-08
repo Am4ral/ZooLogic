@@ -1,15 +1,13 @@
-import org.antlr.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.Token;
 
 import java.io.IOException;
 
 public class CompiladorZooloGic {
 
     public static void  main (String[] args){
-        String filename = "F:\\Faculdade\\Matérias\\5 periodo\\Compiladores\\ZooLogic\\exemplos\\Exemplo-Fat";
+        String filename = "F:\\Faculdade\\Matérias\\5 periodo\\Compiladores\\ZooLogic\\exemplos\\Soma-N-Termos-Fib";
         try{
             CharStream input = CharStreams.fromFileName(filename);
             GrammarZooLogicLexer lexer = new GrammarZooLogicLexer(input);
