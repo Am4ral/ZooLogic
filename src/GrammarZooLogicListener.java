@@ -7,15 +7,17 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface GrammarZooLogicListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#prog}.
+	 * Enter a parse tree produced by the {@code NInicio}
+	 * labeled alternative in {@link GrammarZooLogicParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(GrammarZooLogicParser.ProgContext ctx);
+	void enterNInicio(GrammarZooLogicParser.NInicioContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#prog}.
+	 * Exit a parse tree produced by the {@code NInicio}
+	 * labeled alternative in {@link GrammarZooLogicParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(GrammarZooLogicParser.ProgContext ctx);
+	void exitNInicio(GrammarZooLogicParser.NInicioContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link GrammarZooLogicParser#stmt}.
 	 * @param ctx the parse tree
@@ -27,115 +29,149 @@ public interface GrammarZooLogicListener extends ParseTreeListener {
 	 */
 	void exitStmt(GrammarZooLogicParser.StmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#mainStmt}.
+	 * Enter a parse tree produced by the {@code NMain}
+	 * labeled alternative in {@link GrammarZooLogicParser#mainStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterMainStmt(GrammarZooLogicParser.MainStmtContext ctx);
+	void enterNMain(GrammarZooLogicParser.NMainContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#mainStmt}.
+	 * Exit a parse tree produced by the {@code NMain}
+	 * labeled alternative in {@link GrammarZooLogicParser#mainStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitMainStmt(GrammarZooLogicParser.MainStmtContext ctx);
+	void exitNMain(GrammarZooLogicParser.NMainContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#funcDef}.
+	 * Enter a parse tree produced by the {@code NFuncao}
+	 * labeled alternative in {@link GrammarZooLogicParser#funcDef}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncDef(GrammarZooLogicParser.FuncDefContext ctx);
+	void enterNFuncao(GrammarZooLogicParser.NFuncaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#funcDef}.
+	 * Exit a parse tree produced by the {@code NFuncao}
+	 * labeled alternative in {@link GrammarZooLogicParser#funcDef}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncDef(GrammarZooLogicParser.FuncDefContext ctx);
+	void exitNFuncao(GrammarZooLogicParser.NFuncaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#ifStmt}.
+	 * Enter a parse tree produced by the {@code NIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#ifStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterIfStmt(GrammarZooLogicParser.IfStmtContext ctx);
+	void enterNIf(GrammarZooLogicParser.NIfContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#ifStmt}.
+	 * Exit a parse tree produced by the {@code NIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#ifStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitIfStmt(GrammarZooLogicParser.IfStmtContext ctx);
+	void exitNIf(GrammarZooLogicParser.NIfContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#elifStmt}.
+	 * Enter a parse tree produced by the {@code NElseIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#elifStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterElifStmt(GrammarZooLogicParser.ElifStmtContext ctx);
+	void enterNElseIf(GrammarZooLogicParser.NElseIfContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#elifStmt}.
+	 * Exit a parse tree produced by the {@code NElseIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#elifStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitElifStmt(GrammarZooLogicParser.ElifStmtContext ctx);
+	void exitNElseIf(GrammarZooLogicParser.NElseIfContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#elseStmt}.
+	 * Enter a parse tree produced by the {@code NElse}
+	 * labeled alternative in {@link GrammarZooLogicParser#elseStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterElseStmt(GrammarZooLogicParser.ElseStmtContext ctx);
+	void enterNElse(GrammarZooLogicParser.NElseContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#elseStmt}.
+	 * Exit a parse tree produced by the {@code NElse}
+	 * labeled alternative in {@link GrammarZooLogicParser#elseStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitElseStmt(GrammarZooLogicParser.ElseStmtContext ctx);
+	void exitNElse(GrammarZooLogicParser.NElseContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#forStmt}.
+	 * Enter a parse tree produced by the {@code NFOR}
+	 * labeled alternative in {@link GrammarZooLogicParser#forStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterForStmt(GrammarZooLogicParser.ForStmtContext ctx);
+	void enterNFOR(GrammarZooLogicParser.NFORContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#forStmt}.
+	 * Exit a parse tree produced by the {@code NFOR}
+	 * labeled alternative in {@link GrammarZooLogicParser#forStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitForStmt(GrammarZooLogicParser.ForStmtContext ctx);
+	void exitNFOR(GrammarZooLogicParser.NFORContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#whileStmt}.
+	 * Enter a parse tree produced by the {@code NWhile}
+	 * labeled alternative in {@link GrammarZooLogicParser#whileStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx);
+	void enterNWhile(GrammarZooLogicParser.NWhileContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#whileStmt}.
+	 * Exit a parse tree produced by the {@code NWhile}
+	 * labeled alternative in {@link GrammarZooLogicParser#whileStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx);
+	void exitNWhile(GrammarZooLogicParser.NWhileContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#retStmt}.
+	 * Enter a parse tree produced by the {@code NReturn}
+	 * labeled alternative in {@link GrammarZooLogicParser#retStmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterRetStmt(GrammarZooLogicParser.RetStmtContext ctx);
+	void enterNReturn(GrammarZooLogicParser.NReturnContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#retStmt}.
+	 * Exit a parse tree produced by the {@code NReturn}
+	 * labeled alternative in {@link GrammarZooLogicParser#retStmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitRetStmt(GrammarZooLogicParser.RetStmtContext ctx);
+	void exitNReturn(GrammarZooLogicParser.NReturnContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#varDecl}.
+	 * Enter a parse tree produced by the {@code NDeclaracao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varDecl}.
 	 * @param ctx the parse tree
 	 */
-	void enterVarDecl(GrammarZooLogicParser.VarDeclContext ctx);
+	void enterNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#varDecl}.
+	 * Exit a parse tree produced by the {@code NDeclaracao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varDecl}.
 	 * @param ctx the parse tree
 	 */
-	void exitVarDecl(GrammarZooLogicParser.VarDeclContext ctx);
+	void exitNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#varAssign}.
+	 * Enter a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varAssign}.
 	 * @param ctx the parse tree
 	 */
-	void enterVarAssign(GrammarZooLogicParser.VarAssignContext ctx);
+	void enterNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#varAssign}.
+	 * Exit a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varAssign}.
 	 * @param ctx the parse tree
 	 */
-	void exitVarAssign(GrammarZooLogicParser.VarAssignContext ctx);
+	void exitNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarZooLogicParser#inputOutput}.
+	 * Enter a parse tree produced by the {@code NOutput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
 	 * @param ctx the parse tree
 	 */
-	void enterInputOutput(GrammarZooLogicParser.InputOutputContext ctx);
+	void enterNOutput(GrammarZooLogicParser.NOutputContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarZooLogicParser#inputOutput}.
+	 * Exit a parse tree produced by the {@code NOutput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
 	 * @param ctx the parse tree
 	 */
-	void exitInputOutput(GrammarZooLogicParser.InputOutputContext ctx);
+	void exitNOutput(GrammarZooLogicParser.NOutputContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code NInput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
+	 * @param ctx the parse tree
+	 */
+	void enterNInput(GrammarZooLogicParser.NInputContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code NInput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
+	 * @param ctx the parse tree
+	 */
+	void exitNInput(GrammarZooLogicParser.NInputContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link GrammarZooLogicParser#stringExpr}.
 	 * @param ctx the parse tree

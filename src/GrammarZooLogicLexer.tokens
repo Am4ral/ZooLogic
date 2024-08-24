@@ -27,7 +27,6 @@ OP_COND=26
 OP_ATR=27
 OP_CONCAT=28
 WS=29
-ErrorChar=30
 '()'=1
 ','=2
 'selva'=3

@@ -16,13 +16,13 @@ public class GrammarZooLogicBaseListener implements GrammarZooLogicListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProg(GrammarZooLogicParser.ProgContext ctx) { }
+	@Override public void enterNInicio(GrammarZooLogicParser.NInicioContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProg(GrammarZooLogicParser.ProgContext ctx) { }
+	@Override public void exitNInicio(GrammarZooLogicParser.NInicioContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -40,133 +40,145 @@ public class GrammarZooLogicBaseListener implements GrammarZooLogicListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMainStmt(GrammarZooLogicParser.MainStmtContext ctx) { }
+	@Override public void enterNMain(GrammarZooLogicParser.NMainContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMainStmt(GrammarZooLogicParser.MainStmtContext ctx) { }
+	@Override public void exitNMain(GrammarZooLogicParser.NMainContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncDef(GrammarZooLogicParser.FuncDefContext ctx) { }
+	@Override public void enterNFuncao(GrammarZooLogicParser.NFuncaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncDef(GrammarZooLogicParser.FuncDefContext ctx) { }
+	@Override public void exitNFuncao(GrammarZooLogicParser.NFuncaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfStmt(GrammarZooLogicParser.IfStmtContext ctx) { }
+	@Override public void enterNIf(GrammarZooLogicParser.NIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfStmt(GrammarZooLogicParser.IfStmtContext ctx) { }
+	@Override public void exitNIf(GrammarZooLogicParser.NIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterElifStmt(GrammarZooLogicParser.ElifStmtContext ctx) { }
+	@Override public void enterNElseIf(GrammarZooLogicParser.NElseIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitElifStmt(GrammarZooLogicParser.ElifStmtContext ctx) { }
+	@Override public void exitNElseIf(GrammarZooLogicParser.NElseIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterElseStmt(GrammarZooLogicParser.ElseStmtContext ctx) { }
+	@Override public void enterNElse(GrammarZooLogicParser.NElseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitElseStmt(GrammarZooLogicParser.ElseStmtContext ctx) { }
+	@Override public void exitNElse(GrammarZooLogicParser.NElseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterForStmt(GrammarZooLogicParser.ForStmtContext ctx) { }
+	@Override public void enterNFOR(GrammarZooLogicParser.NFORContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitForStmt(GrammarZooLogicParser.ForStmtContext ctx) { }
+	@Override public void exitNFOR(GrammarZooLogicParser.NFORContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx) { }
+	@Override public void enterNWhile(GrammarZooLogicParser.NWhileContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx) { }
+	@Override public void exitNWhile(GrammarZooLogicParser.NWhileContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRetStmt(GrammarZooLogicParser.RetStmtContext ctx) { }
+	@Override public void enterNReturn(GrammarZooLogicParser.NReturnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRetStmt(GrammarZooLogicParser.RetStmtContext ctx) { }
+	@Override public void exitNReturn(GrammarZooLogicParser.NReturnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVarDecl(GrammarZooLogicParser.VarDeclContext ctx) { }
+	@Override public void enterNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVarDecl(GrammarZooLogicParser.VarDeclContext ctx) { }
+	@Override public void exitNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVarAssign(GrammarZooLogicParser.VarAssignContext ctx) { }
+	@Override public void enterNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVarAssign(GrammarZooLogicParser.VarAssignContext ctx) { }
+	@Override public void exitNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInputOutput(GrammarZooLogicParser.InputOutputContext ctx) { }
+	@Override public void enterNOutput(GrammarZooLogicParser.NOutputContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInputOutput(GrammarZooLogicParser.InputOutputContext ctx) { }
+	@Override public void exitNOutput(GrammarZooLogicParser.NOutputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNInput(GrammarZooLogicParser.NInputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNInput(GrammarZooLogicParser.NInputContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

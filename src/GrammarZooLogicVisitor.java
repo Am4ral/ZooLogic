@@ -10,11 +10,12 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface GrammarZooLogicVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#prog}.
+	 * Visit a parse tree produced by the {@code NInicio}
+	 * labeled alternative in {@link GrammarZooLogicParser#prog}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitProg(GrammarZooLogicParser.ProgContext ctx);
+	T visitNInicio(GrammarZooLogicParser.NInicioContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link GrammarZooLogicParser#stmt}.
 	 * @param ctx the parse tree
@@ -22,71 +23,89 @@ public interface GrammarZooLogicVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStmt(GrammarZooLogicParser.StmtContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#mainStmt}.
+	 * Visit a parse tree produced by the {@code NMain}
+	 * labeled alternative in {@link GrammarZooLogicParser#mainStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMainStmt(GrammarZooLogicParser.MainStmtContext ctx);
+	T visitNMain(GrammarZooLogicParser.NMainContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#funcDef}.
+	 * Visit a parse tree produced by the {@code NFuncao}
+	 * labeled alternative in {@link GrammarZooLogicParser#funcDef}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncDef(GrammarZooLogicParser.FuncDefContext ctx);
+	T visitNFuncao(GrammarZooLogicParser.NFuncaoContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#ifStmt}.
+	 * Visit a parse tree produced by the {@code NIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#ifStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIfStmt(GrammarZooLogicParser.IfStmtContext ctx);
+	T visitNIf(GrammarZooLogicParser.NIfContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#elifStmt}.
+	 * Visit a parse tree produced by the {@code NElseIf}
+	 * labeled alternative in {@link GrammarZooLogicParser#elifStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitElifStmt(GrammarZooLogicParser.ElifStmtContext ctx);
+	T visitNElseIf(GrammarZooLogicParser.NElseIfContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#elseStmt}.
+	 * Visit a parse tree produced by the {@code NElse}
+	 * labeled alternative in {@link GrammarZooLogicParser#elseStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitElseStmt(GrammarZooLogicParser.ElseStmtContext ctx);
+	T visitNElse(GrammarZooLogicParser.NElseContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#forStmt}.
+	 * Visit a parse tree produced by the {@code NFOR}
+	 * labeled alternative in {@link GrammarZooLogicParser#forStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitForStmt(GrammarZooLogicParser.ForStmtContext ctx);
+	T visitNFOR(GrammarZooLogicParser.NFORContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#whileStmt}.
+	 * Visit a parse tree produced by the {@code NWhile}
+	 * labeled alternative in {@link GrammarZooLogicParser#whileStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx);
+	T visitNWhile(GrammarZooLogicParser.NWhileContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#retStmt}.
+	 * Visit a parse tree produced by the {@code NReturn}
+	 * labeled alternative in {@link GrammarZooLogicParser#retStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitRetStmt(GrammarZooLogicParser.RetStmtContext ctx);
+	T visitNReturn(GrammarZooLogicParser.NReturnContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#varDecl}.
+	 * Visit a parse tree produced by the {@code NDeclaracao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varDecl}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitVarDecl(GrammarZooLogicParser.VarDeclContext ctx);
+	T visitNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#varAssign}.
+	 * Visit a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarZooLogicParser#varAssign}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitVarAssign(GrammarZooLogicParser.VarAssignContext ctx);
+	T visitNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link GrammarZooLogicParser#inputOutput}.
+	 * Visit a parse tree produced by the {@code NOutput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInputOutput(GrammarZooLogicParser.InputOutputContext ctx);
+	T visitNOutput(GrammarZooLogicParser.NOutputContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code NInput}
+	 * labeled alternative in {@link GrammarZooLogicParser#inputOutput}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNInput(GrammarZooLogicParser.NInputContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link GrammarZooLogicParser#stringExpr}.
 	 * @param ctx the parse tree

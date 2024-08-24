@@ -21,12 +21,14 @@ arvore indio fibonacci(indio n) {
 
 
 selva() {
-    indio n;
+    indio n = 1;
 
     lhama("Digite um numero ");
     porco(n);
 
-    lhama("A soma dos " ++ n ++ " primeiros termos da sequencia de Fibonacci eh " ++ somaFibonacci(n));
+    indio resultado = somaFibonacci(n);
+
+    lhama("A soma dos " ++ n ++ " primeiros termos da sequencia de Fibonacci eh " ++ resultado);
 
     desmatamento 0;
 }

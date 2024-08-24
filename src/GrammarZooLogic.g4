@@ -1,6 +1,6 @@
 grammar GrammarZooLogic;
 
-prog:   (stmt)*;
+prog:   (stmt)* #NInicio;
 
 stmt:   mainStmt
     |   funcDef
@@ -13,19 +13,19 @@ stmt:   mainStmt
     |   varAssign
     ;
 
-mainStmt:   'selva''()' '{' stmt* '}' ;
-funcDef:    'arvore' TIPO VAR'(' paramList? ')' '{' stmt* '}' ;
-ifStmt:     'cobra' '(' expr ')' '{' stmt* '}' (elifStmt)* (elseStmt)? ;
-elifStmt:   'caudaCobra' '(' expr ')' '{' stmt* '}' ;
-elseStmt:   'cauda' '{' stmt* '}' ;
-forStmt:    'formiga' '(' varDecl expr ';' expr')' '{' stmt* '}' ;
-whileStmt:  'baleia' '(' expr ')' '{' stmt* '}' ;
-retStmt:    'desmatamento' expr ';' ;
-varDecl:    TIPO VAR ('=' expr)? ';' ;
-varAssign:  VAR '=' expr ';' ;
+mainStmt:   'selva''()' '{' stmt* '}' #NMain;
+funcDef:    'arvore' TIPO VAR'(' paramList? ')' '{' stmt* '}' #NFuncao;
+ifStmt:     'cobra' '(' expr ')' '{' stmt* '}' (elifStmt)* (elseStmt)? #NIf;
+elifStmt:   'caudaCobra' '(' expr ')' '{' stmt* '}' #NElseIf;
+elseStmt:   'cauda' '{' stmt* '}' #NElse;
+forStmt:    'formiga' '(' varDecl expr ';' expr')' '{' stmt* '}' #NFOR;
+whileStmt:  'baleia' '(' expr ')' '{' stmt* '}' #NWhile;
+retStmt:    'desmatamento' expr ';' #NReturn;
+varDecl:    TIPO VAR ('=' expr)? ';' #NDeclaracao;
+varAssign:  VAR '=' expr ';' #NAtribuicao;
 
-inputOutput: 'lhama' '(' (stringExpr | VAR | NUM) ')' ';'
-           | 'porco' '(' VAR ')' ';'
+inputOutput: 'lhama' '(' (stringExpr | VAR | NUM) ')' ';' #NOutput
+           | 'porco' '(' VAR ')' ';' #NInput
            ;
 
 stringExpr:  STRING
@@ -33,6 +33,7 @@ stringExpr:  STRING
            | VAR OP_CONCAT stringExpr
            | NUM OP_CONCAT stringExpr
            | '(' expr ')' OP_CONCAT stringExpr
+           | VAR
            ;
 
 
@@ -81,4 +82,4 @@ OP_COND: '&&' | '||';
 OP_ATR: '=';
 OP_CONCAT: '++';
 WS: [ \r\t\n]+ -> skip;
-ErrorChar: . ;
+//ErrorChar: . ;

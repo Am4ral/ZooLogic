@@ -1,36 +1,46 @@
+import org.antlr.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.IOException;
 
 public class CompiladorZooloGic {
 
     public static void  main (String[] args){
+
         String filename = "F:\\Faculdade\\Matérias\\5 periodo\\Compiladores\\ZooLogic\\exemplos\\Soma-N-Termos-Fib";
+
+        GrammarZooLogicParser parser = getParser(filename);
+
+        GrammarZooLogicParser.ProgContext ast = parser.prog();
+
+        System.out.println(ast.toStringTree());
+
+        MyListener listener = new MyListener();
+
+        ParseTreeWalker walker = new ParseTreeWalker();
+
+        walker.walk(listener, ast);
+
+        System.out.println(listener.getSymbolTable().toString());
+    }
+
+
+    private static GrammarZooLogicParser getParser(String fileName){
+
+        GrammarZooLogicParser parser = null;
+
         try{
-            CharStream input = CharStreams.fromFileName(filename);
+            CharStream input = CharStreams.fromFileName(fileName);
             GrammarZooLogicLexer lexer = new GrammarZooLogicLexer(input);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
-            GrammarZooLogicParser parser = new GrammarZooLogicParser(tokens);
+            parser = new GrammarZooLogicParser(tokens);
 
-            GrammarZooLogicParser.ProgContext ast = parser.prog();
-
-            System.out.println(ast.toStringTree(parser));
-
-
-
-
-
-            //Exemplo para exercitar o uso do lexer
-            //Token token;
-//            while (!lexer._hitEOF){
-//                token = lexer.nextToken();
-//                System.out.println("Token: <Classe: "+lexer.getVocabulary().getSymbolicName(token.getType()) +" ,Lexema: "+ token.getText() +">");
-//                }
-
-        } catch (IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }
+        return parser;
     }
 }

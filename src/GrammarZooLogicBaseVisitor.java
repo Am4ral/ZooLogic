@@ -17,7 +17,7 @@ public class GrammarZooLogicBaseVisitor<T> extends AbstractParseTreeVisitor<T> i
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitProg(GrammarZooLogicParser.ProgContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNInicio(GrammarZooLogicParser.NInicioContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -31,77 +31,84 @@ public class GrammarZooLogicBaseVisitor<T> extends AbstractParseTreeVisitor<T> i
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitMainStmt(GrammarZooLogicParser.MainStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNMain(GrammarZooLogicParser.NMainContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitFuncDef(GrammarZooLogicParser.FuncDefContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNFuncao(GrammarZooLogicParser.NFuncaoContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitIfStmt(GrammarZooLogicParser.IfStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNIf(GrammarZooLogicParser.NIfContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitElifStmt(GrammarZooLogicParser.ElifStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNElseIf(GrammarZooLogicParser.NElseIfContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitElseStmt(GrammarZooLogicParser.ElseStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNElse(GrammarZooLogicParser.NElseContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitForStmt(GrammarZooLogicParser.ForStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNFOR(GrammarZooLogicParser.NFORContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitWhileStmt(GrammarZooLogicParser.WhileStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNWhile(GrammarZooLogicParser.NWhileContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitRetStmt(GrammarZooLogicParser.RetStmtContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNReturn(GrammarZooLogicParser.NReturnContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitVarDecl(GrammarZooLogicParser.VarDeclContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNDeclaracao(GrammarZooLogicParser.NDeclaracaoContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitVarAssign(GrammarZooLogicParser.VarAssignContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNAtribuicao(GrammarZooLogicParser.NAtribuicaoContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitInputOutput(GrammarZooLogicParser.InputOutputContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNOutput(GrammarZooLogicParser.NOutputContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitNInput(GrammarZooLogicParser.NInputContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
