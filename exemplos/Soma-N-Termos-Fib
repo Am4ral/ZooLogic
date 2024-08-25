@@ -3,7 +3,6 @@ arvore indio somaFibonacci(indio n) {
     formiga (indio i = 0; i < n; i = i + 1) {
         soma = soma + fibonacci(i);
     }
-
     desmatamento soma;
 }
 

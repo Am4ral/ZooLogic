@@ -140,8 +140,6 @@ public class MyListener extends GrammarZooLogicBaseListener {
             return "indio"; // Supondo que "indio" representa números inteiros
         } else if (ctx.STRING() != null) {
             return "centopeia"; // Supondo um tipo genérico para strings
-        } else if (ctx.BOOL() != null) {
-            return "boi"; // Supondo um tipo genérico para booleanos
         } else if (ctx.VAR() != null) {
             return getVariableType(ctx.VAR().getText());
         } else if (ctx.expr().size() > 1) {
