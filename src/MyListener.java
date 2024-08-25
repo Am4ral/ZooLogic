@@ -5,7 +5,7 @@ public class MyListener extends GrammarZooLogicBaseListener {
     private final Deque<Map<String, String>> scopeStack = new ArrayDeque<>();
 
     public MyListener() {
-        // Inicializa o primeiro escopo global
+
         scopeStack.push(new HashMap<>());
     }
 
@@ -14,15 +14,15 @@ public class MyListener extends GrammarZooLogicBaseListener {
         String varName = ctx.VAR().getText();
         String varType = ctx.TIPO().getText();
 
-        // Verifica se a variável já foi declarada no escopo atual
+
         if (currentScope().containsKey(varName)) {
             throw new RuntimeException("Erro: Variável '" + varName + "' já foi declarada.");
         }
 
-        // Adiciona a variável ao escopo atual
+
         currentScope().put(varName, varType);
 
-        // Verifica se a declaração inclui uma atribuição
+
         if (ctx.expr() != null) {
             String exprType = getType(ctx.expr());
             if (!varType.equals(exprType)) {
@@ -39,11 +39,11 @@ public class MyListener extends GrammarZooLogicBaseListener {
             throw new RuntimeException("Erro: Variável '" + varName + "' não foi declarada.");
         }
 
-        // Verifica o tipo da variável
+
         String varType = getVariableType(varName);
         String exprType = getType(ctx.expr());
 
-        // Verifica se os tipos são compatíveis
+
         if (!varType.equals(exprType)) {
             throw new RuntimeException("Erro de tipo: Tentando atribuir um valor do tipo " + exprType + " à variável " + varName + " do tipo " + varType);
         }
@@ -59,13 +59,13 @@ public class MyListener extends GrammarZooLogicBaseListener {
 
         currentScope().put(funcName, ctx.TIPO().getText());
 
-        // Novo escopo para os parâmetros e variáveis locais da função
+
         scopeStack.push(new HashMap<>());
     }
 
     @Override
     public void exitNFuncao(GrammarZooLogicParser.NFuncaoContext ctx) {
-        // Retira o escopo da função
+
         scopeStack.pop();
     }
 
@@ -83,37 +83,37 @@ public class MyListener extends GrammarZooLogicBaseListener {
 
     @Override
     public void enterNIf(GrammarZooLogicParser.NIfContext ctx) {
-        // Novo escopo para o bloco 'if'
+
         scopeStack.push(new HashMap<>());
     }
 
     @Override
     public void exitNIf(GrammarZooLogicParser.NIfContext ctx) {
-        // Retira o escopo do bloco 'if'
+
         scopeStack.pop();
     }
 
     @Override
     public void enterNWhile(GrammarZooLogicParser.NWhileContext ctx) {
-        // Novo escopo para o bloco 'while'
+
         scopeStack.push(new HashMap<>());
     }
 
     @Override
     public void exitNWhile(GrammarZooLogicParser.NWhileContext ctx) {
-        // Retira o escopo do bloco 'while'
+
         scopeStack.pop();
     }
 
     @Override
     public void enterNFOR(GrammarZooLogicParser.NFORContext ctx) {
-        // Novo escopo para o bloco 'for'
+
         scopeStack.push(new HashMap<>());
     }
 
     @Override
     public void exitNFOR(GrammarZooLogicParser.NFORContext ctx) {
-        // Retira o escopo do bloco 'for'
+
         scopeStack.pop();
     }
 
@@ -137,15 +137,15 @@ public class MyListener extends GrammarZooLogicBaseListener {
 
     private String getType(GrammarZooLogicParser.ExprContext ctx) {
         if (ctx.NUM() != null) {
-            return "indio"; // Supondo que "indio" representa números inteiros
+            return "indio";
         } else if (ctx.STRING() != null) {
-            return "centopeia"; // Supondo um tipo genérico para strings
+            return "centopeia";
         } else if (ctx.VAR() != null) {
             return getVariableType(ctx.VAR().getText());
         } else if (ctx.expr().size() > 1) {
-            return getType(ctx.expr(0)); // Assume que as expressões são do mesmo tipo
+            return getType(ctx.expr(0));
         } else if (ctx.OP_ARIT() != null || ctx.OP_REL() != null || ctx.OP_COND() != null || ctx.OP_ATR() != null) {
-            return "indio"; // Supondo que operações aritméticas retornam inteiros
+            return "indio";
         }
         return "desconhecido";
     }
