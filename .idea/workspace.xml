@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att apresentacao">
+    <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att falta so verificacao de tipo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exemplos/Soma-N-Termos-Fib" beforeDir="false" afterPath="$PROJECT_DIR$/exemplos/Soma-N-Termos-Fib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompiladorZooloGic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompiladorZooloGic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +129,7 @@
       <workItem from="1723219981483" duration="1324000" />
       <workItem from="1724502415217" duration="3628000" />
       <workItem from="1724513556370" duration="18000" />
-      <workItem from="1724547368534" duration="1900000" />
+      <workItem from="1724547368534" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="upando a etapa 1">
       <option name="closed" value="true" />
@@ -187,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723079029696</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="att falta so verificacao de tipo">
+      <option name="closed" value="true" />
+      <created>1724549549029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724549549029</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +214,7 @@
     <MESSAGE value="att etapa 1" />
     <MESSAGE value="att etapa 2" />
     <MESSAGE value="att apresentacao" />
-    <option name="LAST_COMMIT_MESSAGE" value="att apresentacao" />
+    <MESSAGE value="att falta so verificacao de tipo" />
+    <option name="LAST_COMMIT_MESSAGE" value="att falta so verificacao de tipo" />
   </component>
 </project>

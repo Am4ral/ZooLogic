@@ -1,6 +1,5 @@
 arvore indio somaFibonacci(indio n) {
     indio soma = 0;
-
     formiga (indio i = 0; i < n; i = i + 1) {
         soma = soma + fibonacci(i);
     }
@@ -22,8 +21,6 @@ arvore indio fibonacci(indio n) {
 
 selva() {
     indio n = 1;
-
-    indio n2 = "danilo";
 
     lhama("Digite um numero ");
     porco(n);
