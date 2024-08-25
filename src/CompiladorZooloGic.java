@@ -24,7 +24,7 @@ public class CompiladorZooloGic {
 
         walker.walk(listener, ast);
 
-        System.out.println(listener.getSymbolTable().toString());
+        System.out.println(listener.getScopeStack().toString());
     }
 
 

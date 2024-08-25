@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b00caf7d-5ef0-4355-90ec-ffbb399d9f96" name="Changes" comment="att apresentacao">
-      <change afterPath="$PROJECT_DIR$/src/MyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exemplos/Soma-N-Termos-Fib" beforeDir="false" afterPath="$PROJECT_DIR$/exemplos/Soma-N-Termos-Fib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogic.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogic.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zoologic/GrammarZooLogicLexer.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CompiladorZooloGic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompiladorZooloGic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogic.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GrammarZooLogicVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GrammarZooLogicVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +120,8 @@
       <workItem from="1723073420166" duration="5700000" />
       <workItem from="1723219981483" duration="1324000" />
       <workItem from="1724502415217" duration="3628000" />
+      <workItem from="1724513556370" duration="18000" />
+      <workItem from="1724547368534" duration="1900000" />
     </task>
     <task id="LOCAL-00001" summary="upando a etapa 1">
       <option name="closed" value="true" />

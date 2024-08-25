@@ -23,6 +23,8 @@ arvore indio fibonacci(indio n) {
 selva() {
     indio n = 1;
 
+    indio n2 = "danilo";
+
     lhama("Digite um numero ");
     porco(n);
 
